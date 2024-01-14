@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: 'Bookman Old Style', serif;
+            background-color: black;
+            color: white;
+        }
+        #blowGif {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .blow-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .blow-buttons button {
+            margin: 0 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>I forgot the cake... anyways..</h1>
+    <img id="cake.gif" src="cake.gif" alt="cake Gif">
+
+    <p>Blow you... or blow your candle? Nyahhahahhaha</p>
+
+    <div class="blow-buttons">
+        <button onclick="showGif('blow')">Blow</button>
+        <button onclick="showGif('nahh')">Nahh</button>
+    </div>
+
+    <script>
+        alert("wait nakalimutan ko yung cake😂😆");
+        
+        function showGif(choice) {
+            let message = choice === 'blow' ? 'Blowing yo- i mean blowing the candle... yey!~ 🎂 Happy birthday ulit enjoy yur day😆😛🫰' : 'sige na have a nice day🙄😑👍🙂';
+            alert(message);
+            // Display respective gif or take further action based on your scenario.
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Ink Free', sans-serif;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="simulateHack()">Click me for a surprise</button>
+
+    <script>
+        function simulateHack() {
+            // Display fake hack message
+            alert("Your account is being hacked!");
+
+            // After clicking OK, show the birthday message
+            alert("Just kidding, happy birthday Charles!");
+
+            // Redirect to Form 2
+            window.location.href = "form2.html";
+        }
+    </script>
+</body>
+</html>

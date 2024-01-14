@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: 'Bookman Old Style', serif;
+            background-color: black;
+            color: white;
+        }
+        #cookieGif {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, p {
+            margin-bottom: 20px;
+        }
+        .fortune-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .fortune-buttons button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #nextButton {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here's a cookie for ya!~</h1>
+    <p>bawal madaya choose only 1 choose only me nyahahahhaha~ </p>
+    <img id="foryou.jpeg" src="foryou.jpeg" alt="foryou.jpeg">
+
+    <p>Pick your fortune XD</p>
+
+    <div class="fortune-buttons">
+        <button onclick="showFortune('Patience is a virtue; in the face of challenges, remember that good things come to those who wait. Good Luck~')">Fortune 1</button>
+        <button onclick="showFortune('Embrace change and new opportunities; they will lead you to unexpected joy and success.         Good Luck!~')">Fortune 2</button>
+        <button onclick="showFortune('Bad luck, be aware of your surroundings.')">Fortune 3</button>
+    </div>
+
+    <button id="nextButton" onclick="goToForm3()">Next</button>
+
+    <script>
+        function showFortune(fortuneMessage) {
+            alert(fortuneMessage);
+        }
+
+        function goToForm3() {
+            window.location.href = "form3.html";
+        }
+    </script>
+</body>
+</html>
